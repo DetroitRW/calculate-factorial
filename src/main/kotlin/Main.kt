@@ -6,12 +6,9 @@ fun main(args: Array<String>) {
 
     print("Введите цисло: ")
     val n = reader.nextInt()
-    var f = 0
+    var f = 1
 
-    if (n > 0) {
-        f = 1
-    }
-    for (i in (2..n)) {
+    for (i in (1..n)) {
         f *= i
     }
     print("Факториал числа: $n = $f")
