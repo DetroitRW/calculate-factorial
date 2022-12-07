@@ -6,11 +6,11 @@ fun main(args: Array<String>) {
 
     print("Введите цисло: ")
     val n = reader.nextInt()
-    var f = 1
 
-    for (i in (1..n)) {
-        f *= i
-    }
-    print("Факториал числа: $n = $f")
+    print("Факториал числа: ${factorial(n)}")
 
+}
+fun factorial (n: Int) : Int {
+    if (n == 0) return 1;
+    return factorial(n - 1) * n
 }
